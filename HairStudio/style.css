@@ -5,6 +5,8 @@
 	font-family: "Kaushan Script", cursive;
 	font-family: "Poppins", sans-serif;
 }
+
+/* FIRST SECTION  */
 .banner {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), #009688),
 		url(./Barber_Shop_img/banner.jpg);
@@ -46,6 +48,7 @@
     position: relative;
     z-index: 1;
     transition: color 0.5s;
+    cursor: pointer;
 }
 
 /* Span to change color and animate for hover */
@@ -64,4 +67,45 @@
 }
 .banner-btn a:hover{
     color: black;
+}
+
+/*  SIDE NAVIGATION MENU*/
+
+.side-nav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+}
+.side-nav li{
+    list-style: none;
+    margin: 50px 20px;
+
+}
+
+.side-nav a{
+    text-decoration: none;
+    color: white;
+}
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+background: #009688;
+position: fixed;
+right: 30px;
+top: 20px;
+border-radius: 3px;
+z-index: 3;
+cursor: pointer;
+}
+.menu-btn img {
+    width: 20px;
+    margin-top: 15px;
+}
+#menu{
+    
 }
