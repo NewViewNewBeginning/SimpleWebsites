@@ -78,7 +78,11 @@
     right: 0;
     top: 0;
     background: #009688;
+    transition: 0.5s;
     z-index: 2;
+}
+.hidden{
+    right: -250px;
 }
 .side-nav li{
     list-style: none;
@@ -102,10 +106,12 @@ border-radius: 3px;
 z-index: 3;
 cursor: pointer;
 }
-.menu-btn img {
+.menu-icon-close,
+.menu-icon-open{
     width: 20px;
     margin-top: 15px;
+    transition: ease-in 0.3s;
 }
-#menu{
-    
+.hide-icon {
+    display: none;
 }
