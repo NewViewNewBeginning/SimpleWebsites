@@ -15,3 +15,8 @@ const openCloseMenu = () => {
 };
 
 menuBtn.addEventListener("click", openCloseMenu);
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
