@@ -104,7 +104,7 @@ nav {
 }
 
 /* left side  */
-.imp-links {
+.imp-links , .shortcut-links {
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
@@ -116,7 +116,9 @@ nav {
 	width: 25px;
 	margin-right: 15px;
 }
-.imp-links a {
+.imp-links a, .shortcut-links a {
+	display: flex;
+	align-items: center;
     color: #626262;
     margin-bottom: 20px;
     text-decoration: none;
@@ -124,3 +126,18 @@ nav {
 .imp-links a:last-child{
     color: #1876f2;
 }
+.imp-links{
+	border-bottom: 1px solid #ccc;
+}
+.shortcut-links a img {
+	width: 40px;
+	border-radius: 4px;
+	margin-right: 15px;
+}
+
+.shortcut-links p{
+	margin: 25px 0;
+	color: #626262;
+	font-weight: 500;
+}
+
